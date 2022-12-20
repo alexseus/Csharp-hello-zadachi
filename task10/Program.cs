@@ -3,10 +3,10 @@
 782 -> 8
 918 -> 1 */
 
-int SecondDigit(int number)
+void SecondDigit(int number)
 {
     int digit2 = number / 10 - (number / 100) * 10;
-    return digit2;
+    Console.WriteLine($"Вторая цифра: {digit2}");
 }
 
 Console.Clear();
@@ -15,8 +15,7 @@ Console.Write("Введите трехзначное число от 100 до 99
 int num = Convert.ToInt32(Console.ReadLine());
 if (num > 99 && num < 1000)
 {
-    int second = SecondDigit(num);
-    Console.WriteLine($"Вторая цифра: {second}");
+    SecondDigit(num);
 }
 else
 {
