@@ -5,9 +5,7 @@
 
 int SecondDigit(int number)
 {
-    int digit3 = number % 10;
-    int digit1 = number / 100;
-    int digit2 = number / 10 - digit1 * 10;
+    int digit2 = number / 10 - (number / 100) * 10;
     return digit2;
 }
 
