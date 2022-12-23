@@ -17,11 +17,11 @@ void searchPalindrome(int number)
 {
     if (number > 9999 && number < 1000000 )
     {
-        int digit5 = number % 10;
-        int digit4 = ((number - digit5) % 100) / 10;
-        int digit3 = ((number - digit5 - digit4 * 10) % 1000) / 100;
-        int digit2 = (((number - digit5 - digit4 * 10 - digit3 * 100) % 10000) / 1000);
-        int digit1 = (((number - digit5 - digit4 * 10 - digit3 * 100 - digit2 * 1000 ) % 100000) / 10000);
+        int digit5 = number  % 10;
+        int digit4 = (number % 100) / 10;
+        int digit3 = (number % 1000) / 100;
+        int digit2 = (number % 10000) / 1000;
+        int digit1 = (number % 100000) / 10000;
     
         if (digit1 == digit5 && digit2 == digit4)
             {
