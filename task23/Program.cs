@@ -7,18 +7,19 @@
 
 int getUserValue(string message)
 {
-    Console.WriteLine(message);
+    Console.Write(message);
     int result = int.Parse(Console.ReadLine());
     return result;
 }
 
 void cubeValue(int uservalue)
 {
-    for (int i = 1; i < uservalue + 1; i++)
+    for (int i = 1; i < uservalue; i++)
     {
-        double cubeNumber = Math.Pow(i,3);
+        double cubeNumber = Math.Pow(i, 3);
         Console.Write($"{cubeNumber}, ");        
     }
+    Console.WriteLine(Math.Pow(uservalue, 3));
 }
 
 int uservalue = getUserValue("Введите число от 1 до 10: ");

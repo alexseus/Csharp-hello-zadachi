@@ -15,6 +15,7 @@ int getUserValue(string message)
 double CoordinateDistance(int ax, int ay, int az, int bx, int by, int bz)
 {
     double result = Math.Sqrt(Math.Pow((bx-ax),2) + Math.Pow((by-ay),2) + Math.Pow((bz-az),2));
+    result = Math.Round(result, 2);
     return result;
 }
 
@@ -27,4 +28,4 @@ int by = getUserValue("Ведите координаты точки B (y): ");
 int bz = getUserValue("Ведите координаты точки B (z): ");
 
 double distance = CoordinateDistance(ax, ay, az, bx, by ,bz);
-Console.WriteLine($"Расстояние равно: {distance}.");
+Console.WriteLine($"Расстояние равно: {distance}");
