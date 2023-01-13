@@ -22,7 +22,15 @@ void searchPalindrome(int number)
         int digit3 = (number % 1000) / 100;
         int digit2 = (number % 10000) / 1000;
         int digit1 = (number % 100000) / 10000;
-    
+        
+        /* 
+        Console.Write(digit1);
+        Console.Write(digit2);
+        Console.Write(digit3);
+        Console.Write(digit4);
+        Console.Write(digit5);
+        */
+
         if (digit1 == digit5 && digit2 == digit4)
             {
                 Console.WriteLine("да");

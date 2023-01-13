@@ -30,4 +30,4 @@ if (uservalue > 0 && uservalue < 11)
 else
 {
     Console.WriteLine($"Введенная цифра {uservalue} вне диапазона");
-}
+} 
