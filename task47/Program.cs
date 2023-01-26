@@ -6,14 +6,6 @@ m = 3, n = 4.
 8 7,8 -7,1 9
 */
 
-/* int GetUserData(string message);
-{
-    Console.Wrtite(message);
-    int userdata = int.Parse(Console.ReadLine()!);
-    return userdata;
-}
-*/
-
 double[,] CreateArray(int strings, int columns)
 {
     double[,] array = new double[strings, columns];
