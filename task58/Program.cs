@@ -37,12 +37,18 @@ void Print2Martix(int[,] array1, int[,] array2)
 int[,] MatrixProd(int[,] array1, int[,] array2)
 {
     int[,] arrayProd = new int[array1.GetLength(0),array1.GetLength(1)];
-    for (int i = 0; i < array1.GetLength(1); i++)
+    
+    for (int i = 0; i < arrayProd.GetLength(0); i++)
     {
-        
+        for (int j = 0; j < arrayProd.GetLength(1); j++)
+        {
+            for (int k = 0; k < array1.GetLength(0); k++)
+            {
+                arrayProd[i, j] += array1[i, k] * array2[k, j];
+            }
+        }
     }
     return arrayProd;
-    
 }
 
 void PrindMatrix(int[,] array)
